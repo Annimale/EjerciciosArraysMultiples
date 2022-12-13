@@ -38,9 +38,18 @@ public class Ejercicio1 {
             
         }
         System.out.println("************************************");
-        for (int i = 0; i < datos.length; i++) {
+        System.out.println("ANTES DE ASIGNAR");
+        System.out.println("Visualizamos el elemento de la cuarta fila y tercera columna: "+datos[3][2]);
+        System.out.println("Visualizamos el elemento de la quinta fila y tercera columna: "+datos[4][2]);
+        System.out.println("DESPUES DE ASIGNAR");
+        datos[3][2]=datos[4][2] && datos[4][2]=datos[3][2];
+       // datos[4][2]=datos[3][2];
+        System.out.println("Visualizamos el elemento de la cuarta fila y tercera columna DESPUES DE SER ASIGNADO: "+datos[3][2]);
+        //System.out.println("Visualizamos el elemento de la quinta fila y tercera columna DESPUES DE SER ASIGNADO: "+datos[4][2]);
+       
             
-        }
+            
+        
 
     }
     
