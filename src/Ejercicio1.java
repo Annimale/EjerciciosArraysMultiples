@@ -9,7 +9,8 @@
  */
 public class Ejercicio1 {
     public static void main(String[] args) {
-        
+        int aux1=0;
+        int aux2=0;
         int[][]datos = new int [5][7];
         
         
@@ -42,18 +43,58 @@ public class Ejercicio1 {
         System.out.println("Visualizamos el elemento de la cuarta fila y tercera columna: "+datos[3][2]);
         System.out.println("Visualizamos el elemento de la quinta fila y tercera columna: "+datos[4][2]);
         System.out.println("DESPUES DE ASIGNAR");
-        datos[3][2]=datos[4][2] && datos[4][2]=datos[3][2];
+        aux1=datos[3][2];//UTILIZAMOS UNA VARIABLE AUXILIAR PARA GUARDAR EL VALOR
+        datos[3][2]=datos[4][2];
+        datos[4][2]=aux1;// LE ASIGNAMOS EL VALOR LUEGO
+        
+        // && datos[4][2]=datos[3][2];
        // datos[4][2]=datos[3][2];
         System.out.println("Visualizamos el elemento de la cuarta fila y tercera columna DESPUES DE SER ASIGNADO: "+datos[3][2]);
-        //System.out.println("Visualizamos el elemento de la quinta fila y tercera columna DESPUES DE SER ASIGNADO: "+datos[4][2]);
-       
+        System.out.println("Visualizamos el elemento de la quinta fila y tercera columna DESPUES DE SER ASIGNADO: "+datos[4][2]);
+        System.out.println("****************");
+        System.out.println("PRIMERA COLUMNA (COLUMNA 0) ANTES DE ASIGNAR");
+        for (int i = 0; i < datos.length; i++) {
+            System.out.println(datos[i][0]); //BLOQUEAMOS LA POSICION DE j PARA COGER EL PRIMER VALOR DE CADA FILA
+            
+        }
+        System.out.println("CUARTA COLUMNA (COLUMNA 3) ANTES DE ASIGNAR");
+        for (int i = 0; i < datos.length; i++) {
+            System.out.println(datos[i][3]);
+            
+        }
+        
+        System.out.println("ASIGNAMOS A aux2=datos[i][0] Y LUEGO ASIGNAMOS A datos[i][0]=datos[i][3]");
+        for (int i = 0; i < datos.length; i++) { // Y LUEGO VOLVEMOS A ASIGNAR A datos[i][3]=aux2; que son los valores de datos[i][0]
+        aux2=datos[i][0];
+        datos[i][0]=datos[i][3];
+        datos[i][3]=aux2; 
+            
+        }
+        
+        
+        System.out.println("PRIMERA COLUMNA (COLUMNA 0) DESPUES DE ASIGNAR");
+        for (int i = 0; i < datos.length; i++) {
+            
+            System.out.println(datos[i][0]); 
+            
+        }
+        System.out.println("CUARTA COLUMNA (COLUMNA 3) DESPUES DE ASIGNAR");
+        for (int i = 0; i < datos.length; i++) {
+            
+            System.out.println(datos[i][3]); 
+            
+        }
+            
+            
+        }
+        
             
             
         
 
     }
     
-}
+
 
 
 //int matriz[][] = new int[(int) (Math.random()*9+1)][(int) (Math.random()*9+1)];
