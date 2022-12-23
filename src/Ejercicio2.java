@@ -42,13 +42,7 @@ public class Ejercicio2 {
         }
     
     
-    for (int i = 0; i < datos2.length; i++) {//BUCLE PARA ASIGNAR VALORES ALEATORIOS
-            for (int j = 0; j <datos2[i].length ; j++) {
-                
-               // System.out.print("| "+datos2[i][j]+" |");
-            }
-            //System.out.println();
-        }
+    
     for (int i = 0; i < datos.length; i++) {// BUCLE PARA ASIGNAR LA SUMA DE CADA FILA A LA SEPTIMA COLUMNA
             for (int j = 0; j < datos[i].length; j++) {
                 datos2[i][6]=datos2[i][5]/5;
