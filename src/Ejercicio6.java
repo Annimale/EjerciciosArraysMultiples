@@ -4,7 +4,11 @@
  */
 
 /**
- *
+ *Crea un programa para gestionar las notas de un grupo escolar. El grupo
+se compone de 20 alumnos y tiene3 módulos.
+ Calcular la nota media de cada alumno
+ Calcular la máxima nota de cada módulo
+ Calcular la nota media por módulo y cuantos alumnos la sobrepasan
  * @author skril
  */
 public class Ejercicio6 {

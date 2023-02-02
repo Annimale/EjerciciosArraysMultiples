@@ -4,7 +4,11 @@
  */
 
 /**
- *
+ *Introduce una matriz de 7 x 5 y visualízala. A continuación:
+ Crea una nueva matriz de 7 x 7 en donde las cinco primeras
+columnas sean las de la matriz origen
+ Guarda en la columna sexta la suma de las cinco anteriores
+ Guarda en la columna séptima la media de las cinco primeras
  * @author ivamar
  */
 public class Ejercicio2 {

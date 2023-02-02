@@ -4,7 +4,15 @@
  */
 
 /**
- *
+ *Introduce una matriz de 5 filas y 7 columnas y a continuación visualiza:
+ Toda la matriz
+ La fila cinco completa
+ el elemento de la cuarta fila tercera columna y el elemento de la
+quinta fila tercera columna. Intercambiarlos el contenido de
+estos dos elementos y visualizarlos de nuevo
+ La primera columna y la cuarta. Intercambiar el contenido de
+estas columnas y visualizarlas de nuevo
+
  * @author ivamar
  */
 public class Ejercicio1 {
